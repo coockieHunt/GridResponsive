@@ -1,0 +1,89 @@
+@charset "CP850";
+/*import*/
+/*fonctions*/
+/*ireal règle*/
+/* line 9, ../sass/style_grid.scss */
+.col-1, .col-2, .col-3, .col-4, .col-5, .col-6, .col-7, .col-8, .col-9, .col-10, .col-11, .col-12 {
+  float: left;
+  position: relative;
+  min-height: 1px;
+  padding: 0 10px;
+  /*DEV*/
+  background-color: yellow;
+  border: 1px solid green;
+}
+
+/*Fix Box*/
+/* line 20, ../sass/style_grid.scss */
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/* line 21, ../sass/style_grid.scss */
+body {
+  margin: 0px;
+  padding: 0px;
+}
+
+/*genrate class % grid*/
+/* line 25, ../sass/style_grid.scss */
+.col-1 {
+  width: 8.33333%;
+}
+
+/* line 25, ../sass/style_grid.scss */
+.col-2 {
+  width: 16.66667%;
+}
+
+/* line 25, ../sass/style_grid.scss */
+.col-3 {
+  width: 25%;
+}
+
+/* line 25, ../sass/style_grid.scss */
+.col-4 {
+  width: 33.33333%;
+}
+
+/* line 25, ../sass/style_grid.scss */
+.col-5 {
+  width: 41.66667%;
+}
+
+/* line 25, ../sass/style_grid.scss */
+.col-6 {
+  width: 50%;
+}
+
+/* line 25, ../sass/style_grid.scss */
+.col-7 {
+  width: 58.33333%;
+}
+
+/* line 25, ../sass/style_grid.scss */
+.col-8 {
+  width: 66.66667%;
+}
+
+/* line 25, ../sass/style_grid.scss */
+.col-9 {
+  width: 75%;
+}
+
+/* line 25, ../sass/style_grid.scss */
+.col-10 {
+  width: 83.33333%;
+}
+
+/* line 25, ../sass/style_grid.scss */
+.col-11 {
+  width: 91.66667%;
+}
+
+/* line 25, ../sass/style_grid.scss */
+.col-12 {
+  width: 100%;
+}

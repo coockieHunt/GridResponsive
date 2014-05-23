@@ -1,0 +1,28 @@
+/*import*/
+@import "compass";
+
+/*fonctions*/
+$colums: 12!default;
+$pading: 20px!default;
+
+/*ireal règle*/
+	%col{
+		float: left;
+		position: relative;
+		min-height: 1px;
+		padding: 0 $pading * 0.5;
+		/*DEV*/
+		background-color: yellow;
+		border: 1px solid green;
+	}
+
+/*Fix Box*/
+* {@include box-sizing(border-box);}
+body{margin :0px ;padding: 0px;}
+
+/*genrate class % grid*/
+@for $i from 1 through $colums{
+	.col-#{$i}{
+		@extend %col;
+		width: $i / $colums * 100%}
+}
