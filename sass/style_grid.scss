@@ -4,6 +4,8 @@
 /*fonctions*/
 $colums: 12!default;
 $pading: 20px!default;
+$medium: 640px;
+$large: 1040px;
 
 /*ireal règle*/
 	%col{
@@ -20,9 +22,29 @@ $pading: 20px!default;
 * {@include box-sizing(border-box);}
 body{margin :0px ;padding: 0px;}
 
-/*genrate class % grid*/
+/*Genrate class % grid*/
 @for $i from 1 through $colums{
 	.col-#{$i}{
 		@extend %col;
-		width: $i / $colums * 100%}
+		width: $i / $colums * 100%};
+
+	.col-m-#{i}, .col-l-#{i} {@extend %col;}
+}
+
+/*Size screen*/
+
+
+@media only screen and (min-width: $medium) {
+	@for $i from 1 through $colums{
+		.col-m-#{$i}{
+			width: $i / $colums * 100%};
+	}
+}
+
+
+@media only screen and (min-width: $large) {
+	@for $i from 1 through $colums{
+		.col-l-#{$i}{
+			width: $i / $colums * 100%};
+	}
 }
